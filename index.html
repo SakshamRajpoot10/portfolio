@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saksham Rajpoot | Full Stack Web Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Saksham Rajpoot - Full Stack Web Developer specializing in Java, React, and modern web technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Three.js Canvas -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-text"><span class="gradient-text">SR</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="https://drive.google.com/file/d/1_Y5qUc1mbKzgworhLtOVqSW7aWBm4oJd/view?usp=sharing" target="_blank"
+          rel="noopener noreferrer" class="btn-resume" id="downloadResume">
+          <i class="fas fa-download"></i> <span>Resume</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-on-scroll">
+          <span class="wave">👋</span> Hello, I'm
+        </p>
+        <h1 class="hero-name animate-on-scroll">
+          <span class="gradient-text">Saksham</span> Rajpoot
+        </h1>
+        <div class="hero-typing animate-on-scroll">
+          <span class="typing-prefix">I'm a </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-tagline animate-on-scroll">
+          <i class="fas fa-quote-left quote-icon"></i>
+          Guided by Duty, Driven by Excellence.
+          <i class="fas fa-quote-right quote-icon"></i>
+        </p>
+        <div class="hero-cta animate-on-scroll">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span> <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get In Touch</span> <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="hero-socials animate-on-scroll">
+          <a href="https://www.linkedin.com/in/saksham-rajpoot-38043624b" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/SakshamRajpoot10?tab=repositories" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sakshamrajpoot094@gmail.com" class="social-link" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll">
+        <div class="profile-wrapper">
+          <div class="profile-glow"></div>
+          <div class="profile-ring"></div>
+          <img src="https://www.image2url.com/r2/default/images/1777795240220-d097accb-60e7-4952-be88-c10075b58267.png"
+            alt="Saksham Rajpoot" class="profile-img" />
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fab fa-react"></i> React
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fab fa-java"></i> Java
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-database"></i> SQL
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-user"></i> About Me</span>
+        <h2 class="section-title">Know <span class="gradient-text">Who I Am</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-content animate-on-scroll">
+          <p class="about-text-main">I am an aspiring Software Developer with a passion for building functional and
+            user-centric web applications. Currently, I am focused on deepening my expertise in Java Full Stack Web
+            Development, refining my skills in both backend architecture and responsive frontend design.</p>
+          <p class="about-text-detail">I hold a B.Tech in Computer Science and Engineering from Hindustan College of
+            Science and Technology. My technical journey is driven by a strong foundation in core computer science
+            concepts, including Data Structures, Object-Oriented Programming (OOP), and Database Management Systems
+            (DBMS).</p>
+          <div class="about-info-cards">
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-content">
+                <span class="info-label">Location</span>
+                <span class="info-value">Jhansi, Uttar Pradesh, India</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-content">
+                <span class="info-label">Email</span>
+                <span class="info-value">sakshamrajpoot094@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-code"></i></div>
+              <div class="info-content">
+                <span class="info-label">Domain</span>
+                <span class="info-value">Web Development</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-circle-check"></i></div>
+              <div class="info-content">
+                <span class="info-label">Status</span>
+                <span class="info-value available">Open for Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats animate-on-scroll">
+          <div class="stat-card">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="10">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="1">0</div>
+            <div class="stat-label">Degree Earned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">% Dedication</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-cogs"></i> My Skills</span>
+        <h2 class="section-title">Technologies I <span class="gradient-text">Work With</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category animate-on-scroll">
+          <div class="category-header"><i class="fas fa-palette"></i> Frontend</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fab fa-react"></i><span>React.js</span>
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <div class="category-header"><i class="fas fa-server"></i> Backend</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-java"></i><span>Java</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-leaf"></i><span>Spring</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-plug"></i><span>REST APIs</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-layer-group"></i><span>Hibernate</span>
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <div class="category-header"><i class="fas fa-database"></i> Databases</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span>
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <div class="category-header"><i class="fas fa-tools"></i> Tools</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-code"></i><span>Eclipse</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span>
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <div class="category-header"><i class="fas fa-robot"></i> AI Tools</div>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fas fa-brain"></i><span>Claude</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fab fa-github"></i><span>Copilot</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-gem"></i><span>Gemini</span>
+              <div class="skill-glow"></div>
+            </div>
+            <div class="skill-item"><i class="fas fa-rocket"></i><span>Antigravity</span>
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-diagram-project"></i> My Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Works</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="project-filters animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card animate-on-scroll" data-category="web mobile">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="https://github.com/SakshamRajpoot10/EPILEPSY-MONITORING-SYSTEM-EPICARE.git" target="_blank"
+                rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-visual">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Java</span><span class="tag">React</span><span
+                class="tag">Node.js</span><span class="tag">SQL</span><span class="tag">XgBoost</span>
+            </div>
+            <h3 class="project-title">EpiCare - Epilepsy Monitoring System</h3>
+            <p class="project-desc">Designed a real-time monitoring system with 98% seizure detection accuracy using
+              XgBoost and Random Forest algorithms on EEG data. Developed a secure cloud dashboard to log and visualize
+              11,500+ EEG signal samples. Built an automated alert system delivering seizure notifications in under 10
+              seconds.</p>
+            <div class="project-footer">
+              <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+              <a href="https://github.com/SakshamRajpoot10/EPILEPSY-MONITORING-SYSTEM-EPICARE.git" target="_blank"
+                rel="noopener noreferrer" class="project-github"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-on-scroll" data-category="web">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="https://github.com/SakshamRajpoot10/Lingualeap.git" target="_blank" rel="noopener noreferrer"
+                class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-visual">
+              <i class="fas fa-language"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+                class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">SQL</span>
+            </div>
+            <h3 class="project-title">LinguaLeap</h3>
+            <p class="project-desc">Developed LinguaLeap, a full-stack language class booking app enabling real-time
+              student-teacher interaction. Built responsive interfaces using React.js and implemented RESTful APIs for
+              scheduling and data management. Ensured backend reliability with extensive API testing using Postman.</p>
+            <div class="project-footer">
+              <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+              <a href="https://github.com/SakshamRajpoot10/Lingualeap.git" target="_blank" rel="noopener noreferrer"
+                class="project-github"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-graduation-cap"></i> Education</span>
+        <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <h3>B.Tech in Computer Science and Engineering</h3>
+              <span class="timeline-badge">Graduated 2025</span>
+            </div>
+            <p class="timeline-institute"><i class="fas fa-university"></i> Hindustan College of Science and Technology
+            </p>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Mathura, Uttar Pradesh</p>
+            <p class="timeline-desc">CGPA: 6.1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-certificate"></i> Certifications</span>
+        <h2 class="section-title">Credentials & <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-empty animate-on-scroll">
+        <div class="empty-icon"><i class="fas fa-award"></i></div>
+        <p>Currently pursuing certifications to validate my expertise.</p>
+        <p class="subtext">Stay tuned for updates!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-card animate-on-scroll">
+        <div class="cta-glow"></div>
+        <h2 class="cta-title">Let's work <span class="gradient-text">together!</span></h2>
+        <p class="cta-text">I'm currently open for opportunities and would love to hear about your next project.</p>
+        <div class="cta-availability">
+          <span class="pulse-dot"></span> Open for Opportunities
+        </div>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary"><span>Get In Touch</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="mailto:sakshamrajpoot094@gmail.com" class="btn btn-secondary"><span>Email Me</span> <i
+              class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge"><i class="fas fa-paper-plane"></i> Contact</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <h3>Let's Connect</h3>
+          <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><span class="contact-label">Email</span><a
+                  href="mailto:sakshamrajpoot094@gmail.com">sakshamrajpoot094@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><span class="contact-label">Location</span><span>Jhansi, Uttar Pradesh, India</span></div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/saksham-rajpoot-38043624b" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/SakshamRajpoot10?tab=repositories" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:sakshamrajpoot094@gmail.com" class="social-btn" aria-label="Email"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass-card animate-on-scroll" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo-text gradient-text">SR</span>
+          <p>Crafted with <span class="heart">❤️</span> by Saksham Rajpoot</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/saksham-rajpoot-38043624b" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/SakshamRajpoot10?tab=repositories" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:sakshamrajpoot094@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Saksham Rajpoot. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
