@@ -13,7 +13,7 @@ Welcome to the repository for my personal portfolio website. This project showca
 - **Dynamic Sections**: Features dedicated sections for About, Skills, Projects, Education, and a Contact form.
 
 ## 🚀 Live Demo
-[Insert Link to your Live Portfolio here, e.g., GitHub Pages]
+[[Link to Live Portfolio ](https://sakshamrajpoot10.github.io/portfolio/)]
 
 ## 📸 Screenshots
 
