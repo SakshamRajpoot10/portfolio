@@ -1,6 +1,6 @@
 # Saksham Rajpoot | Full Stack Web Developer Portfolio
 
-![Portfolio Preview](./assets/portfolio-preview.png)
+![Portfolio Preview](./images/1.png)
 
 Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, education, and professional experience as an aspiring Software Developer specializing in Java Full Stack Web Development.
 
@@ -17,16 +17,28 @@ Welcome to the repository for my personal portfolio website. This project showca
 
 ## 📸 Screenshots
 
+*(Note: The following are screenshots of the portfolio)*
 
+### 1. Home
+![Home](./images/1.png)
 
-### Home Section
-![Home Section](./assets/home-screenshot.png)
+### 2. About
+![About](./images/2.png)
 
-### Projects Section
-![Projects Section](./assets/projects-screenshot.png)
+### 3. Skills
+![Skills](./images/3.png)
 
-### Contact Section
-![Contact Section](./assets/contact-screenshot.png)
+### 4. Projects
+![Projects](./images/4.png)
+
+### 5. Education
+![Education](./images/5.png)
+
+### 6. Contact
+![Contact](./images/6.png)
+
+### 7. Footer
+![Footer](./images/7.png)
 
 ## 🛠️ Technologies Used
 
