@@ -17,7 +17,7 @@ Welcome to the repository for my personal portfolio website. This project showca
 
 ## 📸 Screenshots
 
-*(Note: Please create an `assets` folder in your repository, take screenshots of your webpage, and replace these placeholder image paths with your actual screenshots to display them here.)*
+
 
 ### Home Section
 ![Home Section](./assets/home-screenshot.png)
