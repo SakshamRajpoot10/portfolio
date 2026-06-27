@@ -32,8 +32,8 @@
 .project-footer { display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid var(--glass-border); }
 .project-status { font-size:13px; display:flex; align-items:center; gap:6px; }
 .project-status.completed { color:#22c55e; }
-.project-github { font-size:13px; color:var(--accent2); display:flex; align-items:center; gap:6px; transition:color 0.3s; }
-.project-github:hover { color:var(--accent3); }
+.project-github, .project-demo { font-size:13px; color:var(--accent2); display:flex; align-items:center; gap:6px; transition:color 0.3s; }
+.project-github:hover, .project-demo:hover { color:var(--accent3); }
 
 /* === EDUCATION === */
 .timeline { position:relative; max-width:700px; margin:0 auto; padding-left:40px; }
