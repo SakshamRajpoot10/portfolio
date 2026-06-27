@@ -1,5 +1,8 @@
 # Saksham Rajpoot | Full Stack Web Developer Portfolio
 
+## 🚀 Live Demo
+[[Link to Live Portfolio ](https://sakshamrajpoot10.github.io/portfolio/)]
+
 ![Portfolio Preview](./Images/1.png)
 
 Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, education, and professional experience as an aspiring Software Developer specializing in Java Full Stack Web Development.
@@ -12,8 +15,7 @@ Welcome to the repository for my personal portfolio website. This project showca
 - **Theme Toggling**: Includes a smooth dark/light mode toggle for better user accessibility and preference.
 - **Dynamic Sections**: Features dedicated sections for About, Skills, Projects, Education, and a Contact form.
 
-## 🚀 Live Demo
-[Insert Link to your Live Portfolio here, e.g., GitHub Pages]
+
 
 ## 📸 Screenshots
 
