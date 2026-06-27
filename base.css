@@ -35,11 +35,6 @@ img { max-width:100%; display:block; }
 .loader-text { margin-top:16px; color:var(--text2); font-size:14px; }
 @keyframes spin { to { transform:rotate(360deg); } }
 
-/* === CURSOR === */
-.cursor-dot,.cursor-ring { position:fixed; pointer-events:none; z-index:9998; border-radius:50%; transition:opacity 0.3s; }
-.cursor-dot { width:6px; height:6px; background:var(--accent); transform:translate(-50%,-50%); }
-.cursor-ring { width:36px; height:36px; border:1.5px solid var(--accent2); transform:translate(-50%,-50%); transition:width 0.2s, height 0.2s; }
-@media(max-width:768px) { .cursor-dot,.cursor-ring { display:none; } }
 
 /* === THREE CANVAS === */
 #three-canvas { position:fixed; inset:0; z-index:0; pointer-events:none; }
